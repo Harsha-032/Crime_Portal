@@ -6,10 +6,10 @@
 <img src="https://github.com/Harsha-032/Crime_Portal/blob/main/Report_crime/Crime_screenshots/Crime_signup.png?raw=true">
 
 <h3> Login page </h3>
-![Crime_login](https://github.com/user-attachments/assets/ca07d853-3a0d-4249-9a7b-061d66635d48)
+<img src="https://github.com/Harsha-032/Crime_Portal/blob/main/Report_crime/Crime_screenshots/Crime_login.png?raw=true">
 
 <h3> Home page </h3>
-![Crime_home](https://github.com/user-attachments/assets/86d86243-f036-43c7-8088-8e40592bb652)
+<img src="https://github.com/user-attachments/assets/86d86243-f036-43c7-8088-8e40592bb652">
 
 <h3> Report crime </h3>
 ![Report_crime1](https://github.com/user-attachments/assets/e7455ba8-eb1a-49d1-a84a-3ac78cadf1ed)
