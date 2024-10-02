@@ -1,0 +1,123 @@
+{% load static %}
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav h2 {
+    color: #fff;
+    margin-top: 0;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: #ccc;
+    text-decoration: underline;
+  }
+
+  nav a[aria-current="page"] {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.2s ease;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .himg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .logout-button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+</style>
+
+<body>
+
+  <nav>
+    <h2>Crime portal</h2>
+    <ul>
+      <li>
+        <a aria-current="page" href="{% url 'home' %}">Home</a>
+      </li>
+      <li>
+        <a aria-current="page" href="{% url 'report' %}">Report-Crime</a>
+      </li>
+      <li>
+        <a aria-current="page" href="{% url 'wanted' %}">Wanted-List</a>
+      </li>
+      <li>
+        <a aria-current="page" href="{% url 'safety' %}">Safety-Precautions</a>
+      </li>
+      
+        <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+    
+    </ul>
+  </nav>
+  <img class="himg" src="https://t3.ftcdn.net/jpg/04/09/07/24/360_F_409072403_CQDQuwJMuQPnD6hQjuBzWmjnOhCvpZSs.jpg"
+    alt="" srcset="">
+</body>
+{% block content %}
+
+{% endblock %}
+
+</html>

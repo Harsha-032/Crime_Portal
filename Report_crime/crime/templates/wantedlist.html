@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    opacity: 10;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .wimg {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    left: 80%;
+  }
+
+  .wanted {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    left: 25%;
+    justify-content: center;
+  }
+
+
+  li:nth-child(13) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #db1616;
+    /* added border to li */
+    justify-content: center;
+    padding: 25px;
+
+  }
+
+  .wanted li {
+    margin-top: 20px;
+  }
+
+  li img {
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  li p {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  li p:first-child {
+    font-weight: bold;
+    color: white;
+  }
+</style>
+
+<body>
+  <center>
+    <h1>wanted List</h1>
+    <div class="wanted">
+      <ul class="wanted">
+
+        {% for Wantedlist in wantedlist %}
+        <li><img class="wimg" src="{{ Wantedlist.image.url }}" alt="Wanted List Image"></li>
+        <li>
+          <p>name:</p>{{Wantedlist.name}}
+        </li>
+        <li>
+          <p>Date of birth:</p>{{Wantedlist.dob}}
+        </li>
+        <li>
+          <p>Place of birth:</p>{{Wantedlist.placeofbirth}}
+        </li>
+        <li>
+          <p>Hair:</p>{{Wantedlist.hair}}
+        </li>
+        <li>
+          <p>Eyes:</p>{{Wantedlist.eyes}}
+        </li>
+        <li>
+          <p>Height:</p>{{Wantedlist.height}}
+        </li>
+        <li>
+          <p>Weight:</p>{{Wantedlist.weight}}
+        </li>
+        <li>
+          <p>Sex:</p>{{Wantedlist.sex}}
+        </li>
+        <li>
+          <p>Occupation:</p>{{Wantedlist.occupation}}
+        </li>
+        <li>
+          <p>Nationality:</p>{{Wantedlist.nationalaity}}
+        </li>
+        <li>
+          <p>Sacrs and marks:</p>{{Wantedlist.scarsandmarks}}
+        </li>
+        <li>
+          <p>Caution:</p>{{Wantedlist.caution}}
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </center>
+</body>
+
+{% endblock %}

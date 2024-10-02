@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .input-box {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .input-box h4 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+    width: 30%;
+  }
+
+  .input-box input[type="text"],
+  .input-box input[type="email"],
+  .input-box input[type="number"],
+  .input-box input[type="date"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .input-box input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .input-box input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  h1,
+  h2 {
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+
+  .input-box h2 {
+    color: black;
+  }
+</style>
+
+<body>
+
+  <h1>Report Crime</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <div class="input-box">
+        <h4>First Name</h4><input type="text" name="fname" placeholder="Name" required>
+        <h4>Last Name</h4><input type="text" name="lname" placeholder="last" required>
+        <h4>Date of birth</h4><input type="date" name="dob" placeholder="date" required>
+        <h4>Phone number</h4><input type="number" name="number" placeholder="number" required>
+        <h4>Email</h4><input type="email" name="email" placeholder="email" required>
+        <h4>Address</h4><input type="text" name="address" placeholder="Address" required>
+        <h4>City</h4><input type="text" name="city" placeholder="city" required>
+        <h4>Country</h4><input type="text" name="country" placeholder="country" required>
+        <h4>State</h4><input type="text" name="state" placeholder="state" required>
+        <h4>Pin-code</h4><input type="text" name="pin" placeholder="pincode" required>
+        <h4>Crime Attempted Address</h4><input type="text" name="ca" placeholder="cad" required>
+
+        <h2>victim info</h2>
+        <h4>Are you reporting behalf of some one else</h4>
+        <input type="text" name="someone" id="" placeholder="yes/no">
+        <h2>What was the crime/incident that occurred?</h2>
+        <input type="text" name="cin" id="">
+      </div>
+      <input type="submit" value="Report" class="btn">
+    </div>
+  </form>
+</body>
+
+{% endblock %}
