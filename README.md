@@ -2,4 +2,5 @@
 
 <h2> Output of Crime_Portal </h2>
 <h3> Sign-up page </h3>
-![image alt](https://github.com/Harsha-032/Crime_Portal/blob/main/Report_crime/Crime_screenshots/Crime_signup.png?raw=true)
+
+![Crime_signup](https://github.com/user-attachments/assets/8b7104d6-930c-49b6-b747-69253657706c)
