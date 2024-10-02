@@ -3,7 +3,7 @@
 <h2> Output of Crime_Portal </h2>
 
 <h3> Sign-up page </h3>
-<img src="https://example.com/image.jpg](https://github.com/user-attachments/assets/8b7104d6-930c-49b6-b747-69253657706c">
+<img src="[https://example.com/image.jpg](https://github.com/user-attachments/assets/8b7104d6-930c-49b6-b747-69253657706c](https://github.com/Harsha-032/Crime_Portal/blob/main/Report_crime/Crime_screenshots/Crime_signup.png?raw=true)">
 
 <h3> Login page </h3>
 ![Crime_login](https://github.com/user-attachments/assets/ca07d853-3a0d-4249-9a7b-061d66635d48)
