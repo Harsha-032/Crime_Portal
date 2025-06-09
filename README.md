@@ -1,6 +1,91 @@
-# Welcome to the Crime-Portal
+# 🕵️‍♂️ Crime Reporting Portal
 
-<h2> Output of Crime_Portal </h2>
+This is a Django-based **Crime Reporting Web Application** that allows users to file crime reports, and admin/police departments to view and manage those reports. The system aims to digitize the crime reporting process for improved accessibility and transparency.
+
+## 📁 Project Structure
+
+```
+Report_crime/
+├── Crime_screenshots/       # (Optional) Folder for screenshots or media
+├── Report_crime/            # Django project folder
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py          # Project configurations
+│   ├── urls.py              # Root URL configuration
+│   └── wsgi.py
+├── crime/                   # Main Django app
+│   ├── admin.py             # Admin dashboard settings
+│   ├── apps.py
+│   ├── models.py            # Database models for crime reports
+│   ├── views.py             # Views/Controllers for app logic
+│   ├── tests.py             # Unit tests (optional)
+│   ├── templates/           # HTML templates
+│   └── migrations/          # Django database migrations
+├── upload/static/           # Static files like images
+│   └── wanted.png
+├── manage.py                # Django management script
+└── .gitignore
+```
+
+## 🌐 Features
+
+- User can submit a crime report online
+- Admin dashboard to view, track, and manage reports
+- Simple UI with Django templates
+- Secure data handling using Django ORM
+- Static file support for assets like images (e.g., wanted posters)
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python, Django
+- **Frontend:** HTML5, CSS3 (via templates)
+- **Database:** SQLite (default Django DB)
+- **Static Files:** Managed in `upload/static/`
+
+## 🚀 Getting Started
+
+### 🔧 Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Harsha-032/Crime_Portal.git
+   cd Crime_Portal/Report_crime
+   ```
+
+2. **Create Virtual Environment (Recommended)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Apply Migrations**
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+5. **Run the Server**
+   ```bash
+   python manage.py runserver
+   ```
+
+6. **Access the App**
+   - Visit `http://127.0.0.1:8000/` in your browser
+
+## 👤 Admin Login (if configured)
+
+> Replace with your superuser credentials if set
+
+```bash
+python manage.py createsuperuser
+```
+
+## 📸 Screenshots
 
 <h3> Sign-up page </h3>
 <img src="https://github.com/Harsha-032/Crime_Portal/blob/main/Report_crime/Crime_screenshots/Crime_signup.png?raw=true">
@@ -33,3 +118,17 @@
 <img src="https://github.com/user-attachments/assets/1b325f5f-6e6a-44af-a09b-5d133954ea09">
 <h3> Safety precautions displayed </h3>
 <img src="https://github.com/user-attachments/assets/7a3fd45b-d590-4898-8b4f-5e724ef78d86">
+
+## 🙋‍♂️ Author
+
+**Harsha C**  
+GitHub: [@Harsha-032](https://github.com/Harsha-032)
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+
+---
+
+### ✅ Feel free to star the repo, fork it, and contribute!
+
